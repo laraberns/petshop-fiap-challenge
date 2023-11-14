@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orelega+One&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        *{
+            font-family: 'Inter', sans-serif;;
+        }
+        :root {
+            --font-title: 'Orelega One', serif;
+            --font-text: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black px-2">
+        <div class="container-fluid">
+            <a href="#">
+                <img src="./assets/pathDog.svg" alt="dog logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Agendamento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="d-lg-flex justify-content-around align-items-center m-5 text-center text-lg-start">
+        <div>
+            <h2 class="text-primary fs-1" style="font-family: var(--font-title)">Boas vindas ao <br>site dos pets</h2>
+            <p style="font-weight: 400;" class="fs-5 text-secondary">Banho, tosa e tudo
+                que seu pet merece!</p>
+        </div>
+        <img src="./assets/Family-pana (1) 1.svg" alt="family with a dog">
+    </section>
+
+    <section class="mx-5 mb-5">
+        <h2 class="text-primary fs-1 text-center" style="font-family: var(--font-title)">Sobre nós</h2>
+        <div class="d-lg-flex align-items-center justify-content-around">
+            <img src="./assets/Veterinary-pana 1.svg" alt="image of veterinary">
+            <p style=" font-weight: 400;" class="fs-6 text-secondary text-center px-5">
+                Fundada em 2017 por um casal apaixonado por animais e com vasta experiência na área, a petshop <b>Site
+                    dos Pets</b> nasceu com o objetivo de oferecer um serviço completo e de qualidade para o cuidado e
+                bem-estar dos animais de estimação. Impulsionados pela falta de opções especializadas na região, eles
+                viram a oportunidade de preencher essa lacuna e fornecer um ambiente acolhedor para tutores e seus
+                amiguinhos peludos.</p>
+        </div>
+    </section>
+
+    <section class="mx-5">
+        <h2 class="text-primary fs-1 text-center mb-4" style="font-family: var(--font-title)">Serviços</h2>
+        <div class="d-flex text-center gap-5 flex-wrap justify-content-center">
+
+            <div class="bg-secondary rounded-4 p-4" style="width: 315px; height: 315px;">
+                <img src="./assets/imagem-banho.svg" alt="dog image taking a shower">
+                <h3 style="font-weight: 700;" class="fs-3 text-white">Banho</h3>
+            </div>
+
+            <div class="bg-secondary rounded-4 p-4" style="width: 315px; height: 315px;">
+                <img src="./assets/imagem-tosa.svg" alt="dog image taking a shower">
+                <h3 style="font-weight: 700;" class="fs-3 text-white">Tosa</h3>
+            </div>
+
+            <div class="bg-secondary rounded-4 p-4" style="width: 315px; height: 315px;">
+                <img src="./assets/imagem-consulta.svg" alt="cat image taking an appointment" class="m">
+                <h3 style="font-weight: 700;" class="fs-3 text-white mt-4">Consultas</h3>
+            </div>
+
+            <div class="bg-secondary rounded-4" style="width: 315px; height: 315px;">
+                <img src="./assets/imagem-adoção.svg" alt="dog image saying hi">
+                <h3 style="font-weight: 700;" class="fs-3 text-white">Adoção</h3>
+            </div>
+
+            <div class="bg-secondary rounded-4 p-4" style="width: 315px; height: 315px;">
+                <img src="./assets/imagem-creche.svg" alt="dog and cat together with hearts">
+                <h3 style="font-weight: 700;" class="fs-3 text-white">Creche</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-5">
+        <h2 class="text-primary fs-1 text-center my-5" style="font-family: var(--font-title)">Agende seu atendimento!
+        </h2>
+        <div class="d-lg-flex justify-content-around gap-5">
+            <form>
+                <div class="mb-3">
+                    <label for="nomeCompleto" class="form-label"
+                        style="font-weight: 400;">Nome completo</label>
+                    <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome completo">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label" style="font-weight: 400"
+                        ;>Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXX-XXXX">
+                </div>
+
+                <div>
+                    <label for="select" style="font-weight: 400" class="mb-2">Tipo de
+                        atendimento</label>
+                    <div class="form-check" id="select">
+                        <input class="form-check-input" type="checkbox" id="banho">
+                        <label class="form-check-label" for="banho">
+                            Banho
+                        </label>
+                    </div>
+                    <div class="form-check" id="select">
+                        <input class="form-check-input" type="checkbox" id="tosa">
+                        <label class="form-check-label" for="tosa">
+                            Tosa
+                        </label>
+                    </div>
+                    <div class="form-check" id="select">
+                        <input class="form-check-input" type="checkbox" id="consulta">
+                        <label class="form-check-label" for="consulta">
+                            Consulta
+                        </label>
+                    </div>
+                    <div class="form-check" id="select">
+                        <input class="form-check-input" type="checkbox" id="adocao">
+                        <label class="form-check-label" for="adocao">
+                            Adoção
+                        </label>
+                    </div>
+                    <div class="form-check" id="select">
+                        <input class="form-check-input" type="checkbox" id="creche">
+                        <label class="form-check-label" for="creche">
+                            Creche
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+
+            </form>
+
+            <div class="mx-auto mt-5 w-75">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="bg-secondary-subtle">Dias da semana</th>
+                            <th class="bg-secondary-subtle text-end">Horários</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</th>
+                            <td class="text-end">14:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</th>
+                            <td class="text-end">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</th>
+                            <td class="text-end">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-feira</th>
+                            <td class="text-end">08:00 às 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</th>
+                            <td class="text-end">08:00 às 14:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-light d-lg-flex justify-content-around py-3 text-center align-items-center px-5 mt-4">
+        <p style="font-weight: 300;">2023 @ Desenvolvido por Lara Pereira | Projeto
+            fictício sem fins comerciais</p>
+        <ul class="d-flex list-unstyled gap-3 justify-content-center">
+            <li><a href="#">
+                    <img src="./assets/whatsapp.png" alt="logo whatsapp"></a>
+            </li>
+
+            <li><a href="#">
+                    <img src="./assets/instagram.png" alt="logo instagram"></a>
+            </li>
+
+            <li><a href="#">
+                    <img src="./assets/linkedin.png" alt="logo linkedin"></a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
