@@ -16,13 +16,44 @@
         rel="stylesheet">
 
     <style>
-
-        *{
-            font-family: 'Inter', sans-serif;;
+        * {
+            font-family: 'Inter', sans-serif;
+            ;
         }
+
         :root {
             --font-title: 'Orelega One', serif;
             --font-text: 'Inter', sans-serif;
+        }
+
+        #widthImgSection1 {
+            width: 40%;
+        }
+
+        .text-size-title {
+            font-size: 3rem;
+        }
+
+        .marginLeftContainer {
+            margin: 0px 100px;
+        }
+
+        .tabelaTamanho {
+            width: 50%;
+        }
+
+        @media (max-width: 992px) {
+            #widthImgSection1 {
+                width: 100%;
+            }
+
+            .tabelaTamanho {
+                width: 100%;
+            }
+
+            .marginLeftContainer {
+                margin: 0px 50px;
+            }
         }
     </style>
 </head>
@@ -56,18 +87,19 @@
 
     <section class="d-lg-flex justify-content-around align-items-center m-3 text-center text-lg-start">
         <div>
-            <h2 class="text-primary fs-1" style="font-family: var(--font-title)">Boas vindas ao <br>site dos pets</h2>
+            <h2 class="text-primary text-size-title" style="font-family: var(--font-title)">Boas vindas ao <br>site dos
+                pets</h2>
             <p style="font-weight: 400;" class="fs-5 text-secondary">Banho, tosa e tudo
                 que seu pet merece!</p>
         </div>
-        <img src="./assets/Family-pana (1) 1.svg" alt="family with a dog" class="w-100">
+        <img src="./assets/Family-pana (1) 1.svg" alt="family with a dog" id="widthImgSection1">
     </section>
 
-    <section class="mx-3 mb-5 text-center">
-        <h2 class="text-primary fs-1" style="font-family: var(--font-title)">Sobre nós</h2>
+    <section class="mb-5 text-center marginLeftContainer">
+        <h2 class="text-primary text-size-title" style="font-family: var(--font-title)">Sobre nós</h2>
         <div class="d-lg-flex align-items-center justify-content-around">
             <img src="./assets/Veterinary-pana 1.svg" alt="image of veterinary" class="w-100">
-            <p style=" font-weight: 400;" class="fs-6 text-secondary text-center px-5">
+            <p style=" font-weight: 400;" class="fs-5 text-secondary text-center px-5">
                 Fundada em 2017 por um casal apaixonado por animais e com vasta experiência na área, a petshop <b>Site
                     dos Pets</b> nasceu com o objetivo de oferecer um serviço completo e de qualidade para o cuidado e
                 bem-estar dos animais de estimação. Impulsionados pela falta de opções especializadas na região, eles
@@ -77,7 +109,7 @@
     </section>
 
     <section class="mx-5">
-        <h2 class="text-primary fs-1 text-center mb-4" style="font-family: var(--font-title)">Serviços</h2>
+        <h2 class="text-primary text-size-title text-center mb-4" style="font-family: var(--font-title)">Serviços</h2>
         <div class="d-flex text-center gap-5 flex-wrap justify-content-center">
 
             <div class="bg-secondary rounded-4 p-4" style="width: 315px; height: 315px;">
@@ -107,20 +139,19 @@
         </div>
     </section>
 
-    <section class="m-5">
-        <h2 class="text-primary fs-1 text-center my-5" style="font-family: var(--font-title)">Agende seu atendimento!
+    <section class="marginLeftContainer">
+        <h2 class="text-primary text-size-title text-center my-5" style="font-family: var(--font-title)">Agende seu
+            atendimento!
         </h2>
-        <div class="d-lg-flex justify-content-around gap-5">
-            <form>
+        <div class="d-lg-flex gap-5">
+            <form class="w-50 mx-auto">
                 <div class="mb-3">
-                    <label for="nomeCompleto" class="form-label"
-                        style="font-weight: 400;">Nome completo</label>
+                    <label for="nomeCompleto" class="form-label" style="font-weight: 400;">Nome completo</label>
                     <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome completo">
                 </div>
 
                 <div class="mb-3">
-                    <label for="telefone" class="form-label" style="font-weight: 400"
-                        ;>Telefone</label>
+                    <label for="telefone" class="form-label" style="font-weight: 400" ;>Telefone</label>
                     <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXX-XXXX">
                 </div>
 
@@ -163,7 +194,7 @@
 
             </form>
 
-            <div class="mx-auto mt-5 w-75">
+            <div class="mx-auto mt-5 tabelaTamanho">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
